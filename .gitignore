@@ -1,0 +1,17 @@
+# Variáveis de ambiente e senhas (NUNCA versionar)
+.env
+
+# Ambiente virtual Python
+venv/
+.venv/
+env/
+
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configurações locais de IDE e SO
+.vscode/
+.idea/
+.DS_Store
