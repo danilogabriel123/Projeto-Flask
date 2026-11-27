@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<div class="page-admin"> 
+<h2>Gerenciamento de Usuários (Painel Admin)</h2> 
+<p>Lista total de usuários cadastrados no banco de dados MySQL.</p> 
+<div class="table-responsive"> 
+<table class="data-table"> 
+<thead> 
+<tr> 
+<th>ID</th> 
+<th>Nome</th> 
+<th>E-mail</th> 
+<th>Tipo</th> 
+</tr> 
+</thead> 
+<tbody> 
+{% for u in usuarios %} 
+<tr> 
+<td>{{ u.id }}</td> 
+<td>{{ u.nome }}</td> 
+<td>{{ u.email }}</td> 
+<td><span class="badge badge-{{ u.tipo_usuario }}">{{ 
+u.tipo_usuario }}</span></td> 
+</tr> 
+{% endfor %} 
+</tbody> 
+</table> 
+</div> 
+</div> 
+{% endblock %} 
