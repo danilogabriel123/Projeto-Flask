@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<div class="page-perfil"> 
+<div class="profile-card"> 
+<h2>Perfil do Usuário</h2> 
+<div class="profile-info"> 
+<p><strong>ID:</strong> {{ usuario.id }}</p> 
+<p><strong>Nome:</strong> {{ usuario.nome }}</p> 
+<p><strong>E-mail:</strong> {{ usuario.email }}</p> 
+<p><strong>Tipo de Conta:</strong> <span class="badge">{{ 
+usuario.tipo_usuario }}</span></p> 
+</div> 
+</div> 
+</div> 
+{% endblock %} 
